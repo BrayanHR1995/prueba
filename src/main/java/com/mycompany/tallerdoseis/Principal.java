@@ -96,9 +96,9 @@ public class Principal {
             // Getting the probabilities of the tags given to the tokens
             double probs[] = posTagger.probs();
             
-            System.out.println("Token\t:\tTag\t:\tProbability\n---------------------------------------------");
+
             for(int i=0;i<tokens.length;i++){
-                System.out.println(tokens[i]+"\t:\t"+tags[i]+"\t:\t"+probs[i]);
+                
                 estado1=false;
                 
                 if(tokens[i].equals("by")){
@@ -185,13 +185,13 @@ public class Principal {
                 enviar =Interfaz.TextArea.getText();
                 enviar = enviar +"Activa\n";
                 Interfaz.TextArea.setText(enviar);
-                System.out.println("Activa");
+               
                 
             }else{
                 enviar =Interfaz.TextArea.getText();
                 enviar = enviar + "Pasiva\n";
                 Interfaz.TextArea.setText(enviar);
-                System.out.println("Pasiva");
+                
             }
             
             
