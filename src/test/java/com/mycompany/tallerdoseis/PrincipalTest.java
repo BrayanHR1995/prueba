@@ -55,7 +55,7 @@ public class PrincipalTest {
     @Test
     public void testDetectar() throws Exception {
         System.out.println("Detectar");
-        String sentence = "holas";
+        String sentence = "holasaaa";
         System.out.println(sentence);
         Principal instance = new Principal();
         String expResult = "Pasiva\n";
