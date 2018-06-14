@@ -1,3 +1,4 @@
 language: java
 sudo: enabled
 jdk: oraclejdk8
+script: xvfb-run make test
