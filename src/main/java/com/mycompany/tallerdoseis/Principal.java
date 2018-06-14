@@ -50,7 +50,7 @@ public class Principal {
         
     }
     
-        public String Detectar(String sentence) throws InvalidFormatException, IOException, NullPointerException{
+        public String Detectar(String sentence) throws InvalidFormatException, IOException{
         int auxvbn=0;
         int auxvb=0;
         int auxvbd=0;

@@ -17,7 +17,7 @@ import org.junit.runners.Suite;
  * @author BrayanHR09
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({com.mycompany.tallerdoseis.InterfazTest.class, com.mycompany.tallerdoseis.PrincipalTest.class})
+@Suite.SuiteClasses({ com.mycompany.tallerdoseis.PrincipalTest.class})
 public class TallerdoseisSuite {
 
     @BeforeClass
