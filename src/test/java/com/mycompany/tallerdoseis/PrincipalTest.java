@@ -60,6 +60,7 @@ public class PrincipalTest {
         String expResult = "Pasiva\n";
         String result = instance.Detectar(sentence);
         assertEquals(expResult, result);
+        System.out.println(expResult);
         System.out.println(result);
         // TODO review the generated test code and remove the default call to fail.
         
