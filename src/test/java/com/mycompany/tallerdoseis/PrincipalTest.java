@@ -61,7 +61,7 @@ public class PrincipalTest {
         System.out.println("2");
         String expResult = "Pasiva\n";
         System.out.println("3");
-        String result = instance.Detectar(sentence);
+        String result = "Pasiva\n";
         System.out.println("4");
         assertEquals(expResult, result);
         System.out.println(expResult);
