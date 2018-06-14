@@ -46,7 +46,7 @@ public class PrincipalTest {
         String[] args = null;
         Principal.main(args);
         // TODO review the generated test code and remove the default call to fail.
-
+   
     }
 
     /**
@@ -54,7 +54,7 @@ public class PrincipalTest {
      */
     @Test
     public void testDetectar() throws Exception {
-        System.out.println("Detectar");
+  System.out.println("Detectar");
         String sentence = "holas";
         System.out.println("1");
         Principal instance = new Principal();

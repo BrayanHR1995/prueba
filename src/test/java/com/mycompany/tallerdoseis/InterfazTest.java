@@ -41,7 +41,6 @@ public class InterfazTest {
     /**
      * Test of getTextArea method, of class Interfaz.
      */
-    /**
     @Test
     public void testGetTextArea() {
         System.out.println("getTextArea");
@@ -50,13 +49,12 @@ public class InterfazTest {
         JTextArea result = instance.getTextArea();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-    
+  
     }
-*/
+
     /**
      * Test of main method, of class Interfaz.
      */
-    /**
     @Test
     public void testMain() {
         System.out.println("main");
@@ -65,12 +63,10 @@ public class InterfazTest {
         // TODO review the generated test code and remove the default call to fail.
 
     }
-*/
+
     /**
      * Test of mostrarCsv method, of class Interfaz.
      */
-    
-    /**
     @Test
     public void testMostrarCsv() throws Exception {
         System.out.println("mostrarCsv");
@@ -81,5 +77,5 @@ public class InterfazTest {
         // TODO review the generated test code and remove the default call to fail.
 
     }
-    */
+    
 }
