@@ -50,7 +50,7 @@ public class Principal {
         
     }
     
-        public void Detectar(String sentence) throws InvalidFormatException, IOException{
+        public String Detectar(String sentence) throws InvalidFormatException, IOException{
         int auxvbn=0;
         int auxvb=0;
         int auxvbd=0;
@@ -75,18 +75,18 @@ public class Principal {
         boolean estado1= false;
         InputStream tokenModelIn = null;
         InputStream posModelIn = null;
-        
+         String enviar = null;
         try {
          
             // tokenize the sentence
-            tokenModelIn = new FileInputStream("C:\\Users\\braya\\OneDrive\\Documents\\NetBeansProjects\\Gui\\src\\gui\\en-token.bin");
+            tokenModelIn = new FileInputStream("en-token.bin");
             TokenizerModel tokenModel = new TokenizerModel(tokenModelIn);
             Tokenizer tokenizer = new TokenizerME(tokenModel);
             String tokens[] = tokenizer.tokenize(sentence);
  
             // Parts-Of-Speech Tagging
             // reading parts-of-speech model to a stream 
-            posModelIn = new FileInputStream("C:\\Users\\braya\\OneDrive\\Documents\\NetBeansProjects\\Gui\\src\\gui\\en-pos-maxent.bin");
+            posModelIn = new FileInputStream("en-pos-maxent.bin");
             // loading the parts-of-speech model from stream
             POSModel posModel = new POSModel(posModelIn);
             // initializing the parts-of-speech tagger with model 
@@ -102,7 +102,7 @@ public class Principal {
                 estado1=false;
                 
                 if(tokens[i].equals("by")){
-                    String enviar =Interfaz.TextArea.getText();
+                    enviar =Interfaz.TextArea.getText();
                     enviar = enviar + "Pasiva\n";
                     Interfaz.TextArea.setText(enviar);
                     System.out.println("Pasiva");
@@ -182,17 +182,18 @@ public class Principal {
             
 
             if(possujeto<posverbo){
-                String enviar =Interfaz.TextArea.getText();
+                enviar =Interfaz.TextArea.getText();
                 enviar = enviar +"Activa\n";
                 Interfaz.TextArea.setText(enviar);
                 System.out.println("Activa");
                 
             }else{
-                String enviar =Interfaz.TextArea.getText();
+                enviar =Interfaz.TextArea.getText();
                 enviar = enviar + "Pasiva\n";
                 Interfaz.TextArea.setText(enviar);
                 System.out.println("Pasiva");
             }
+            
             
         }
         }
@@ -216,6 +217,7 @@ public class Principal {
                 }
             }
         }
+        return enviar;
     }
 
 
