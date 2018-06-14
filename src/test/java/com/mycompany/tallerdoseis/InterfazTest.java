@@ -49,7 +49,7 @@ public class InterfazTest {
         JTextArea result = instance.getTextArea();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -61,7 +61,7 @@ public class InterfazTest {
         String[] args = null;
         Interfaz.main(args);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
