@@ -56,6 +56,7 @@ public class PrincipalTest {
     public void testDetectar() throws Exception {
         System.out.println("Detectar");
         String sentence = "holas";
+        System.out.println(sentence);
         Principal instance = new Principal();
         String expResult = "Pasiva\n";
         String result = instance.Detectar(sentence);
