@@ -75,7 +75,7 @@ public class Principal {
         boolean estado1= false;
         InputStream tokenModelIn = null;
         InputStream posModelIn = null;
-         String enviar = null;
+        String enviar = null;
         try {
          
             // tokenize the sentence

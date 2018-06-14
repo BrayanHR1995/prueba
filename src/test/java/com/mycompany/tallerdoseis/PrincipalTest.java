@@ -46,7 +46,7 @@ public class PrincipalTest {
         String[] args = null;
         Principal.main(args);
         // TODO review the generated test code and remove the default call to fail.
-   
+
     }
 
     /**
@@ -61,13 +61,11 @@ public class PrincipalTest {
         System.out.println("2");
         String expResult = "Pasiva\n";
         System.out.println("3");
-        String result = "Pasiva\n";
+        String result = instance.Detectar(sentence);
         System.out.println("4");
         assertEquals(expResult, result);
         System.out.println(expResult);
         System.out.println(result);
-        // TODO review the generated test code and remove the default call to fail.
-        
     }
     
 }
