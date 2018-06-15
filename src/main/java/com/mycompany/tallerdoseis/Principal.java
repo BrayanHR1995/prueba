@@ -42,15 +42,10 @@ public class Principal {
    public static final String QUOTE="\"";
    public static String contenido;
    public static BufferedReader br;
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Interfaz ventana = new Interfaz();
-        ventana.setTitle("Interfaz Taller Dos");
-        ventana.setVisible(true);
-        
-    }
+
     
-        public String Detectar(String sentence) throws InvalidFormatException, IOException{
+    
+    public String Detectar(String sentence) throws InvalidFormatException, IOException{
         int auxvbn=0;
         int auxvb=0;
         int auxvbd=0;
@@ -75,7 +70,8 @@ public class Principal {
         boolean estado1= false;
         InputStream tokenModelIn = null;
         InputStream posModelIn = null;
-        String enviar = null;
+        String enviar = "x";
+        String p= "x";
         try {
          
             // tokenize the sentence
@@ -102,9 +98,8 @@ public class Principal {
                 estado1=false;
                 
                 if(tokens[i].equals("by")){
-                    enviar =Interfaz.TextArea.getText();
-                    enviar = enviar + "Pasiva\n";
-                    Interfaz.TextArea.setText(enviar);
+                enviar="Pasiva\n";
+     
                     System.out.println("Pasiva");
                     estado1=true;
                     break;
@@ -182,15 +177,13 @@ public class Principal {
             
 
             if(possujeto<posverbo){
-                enviar =Interfaz.TextArea.getText();
-                enviar = enviar +"Activa\n";
-                Interfaz.TextArea.setText(enviar);
+                enviar="Activa\n";
+
                
                 
             }else{
-                enviar =Interfaz.TextArea.getText();
-                enviar = enviar + "Pasiva\n";
-                Interfaz.TextArea.setText(enviar);
+                enviar="Pasiva\n";
+
                 
             }
             

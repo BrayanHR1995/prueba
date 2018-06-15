@@ -38,30 +38,16 @@ public class PrincipalTest {
     }
 
     /**
-     * Test of main method, of class Principal.
-     */
-    
-    
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Principal.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-   
-    }
-
-    /**
      * Test of Detectar method, of class Principal.
      */
     @Test
     public void testDetectar() throws Exception {
-  System.out.println("Detectar");
-        String sentence = "holas";
+        System.out.println("Detectar");
+        String sentence = "He is man";
         System.out.println("1");
         Principal instance = new Principal();
         System.out.println("2");
-        String expResult = "Pasiva\n";
+        String expResult = "Activa\n";
         System.out.println("3");
         String result = instance.Detectar(sentence);
         System.out.println("4");
